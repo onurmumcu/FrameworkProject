@@ -10,7 +10,7 @@ public class LoginPage {
 	
 	By email =By.cssSelector("[id='user_email']");
 	By password =By.cssSelector("[type='password']");
-	By login =By.cssSelector("[value='Log in']");
+	By login =By.cssSelector("[value='Log In']");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver= driver;

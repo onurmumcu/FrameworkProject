@@ -2,43 +2,17 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29411" started-at="2019-09-19T05:26:22 EDT" finished-at="2019-09-19T05:26:51 EDT">
+  <suite name="Default suite" duration-ms="50" started-at="2019-09-20T03:01:06 EDT" finished-at="2019-09-20T03:01:07 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29411" started-at="2019-09-19T05:26:22 EDT" finished-at="2019-09-19T05:26:51 EDT">
+    <test name="Default test" duration-ms="50" started-at="2019-09-20T03:01:06 EDT" finished-at="2019-09-20T03:01:07 EDT">
       <class name="TestCases.HomePageTest">
-        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:TestCases.HomePageTest@1f28c152]" name="basePageNavigation" duration-ms="29379" started-at="2019-09-19T05:26:22 EDT" finished-at="2019-09-19T05:26:51 EDT">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="http://qaclickacademy.usefedora.com/sign_in">...</a> is not clickable at point (758, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: headless chrome=77.0.3865.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7M3VN73', ip: '10.0.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 646a828500f9fea88e29650fe572ee65]]>
-            </message>
+        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:TestCases.HomePageTest@1f28c152]" name="basePageNavigation" duration-ms="14" started-at="2019-09-20T03:01:06 EDT" finished-at="2019-09-20T03:01:07 EDT">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://qaclickacademy.usefedora.com/sign_in">...</a> is not clickable at point (758, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
-  (Session info: headless chrome=77.0.3865.90)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-7M3VN73', ip: '10.0.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\Onur\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53635}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 646a828500f9fea88e29650fe572ee65
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at TestCases.HomePageTest.basePageNavigation(HomePageTest.java:19)
+              <![CDATA[java.lang.NullPointerException
+at resources.Base.initializeDriver(Base.java:29)
+at TestCases.HomePageTest.basePageNavigation(HomePageTest.java:14)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -69,7 +43,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
