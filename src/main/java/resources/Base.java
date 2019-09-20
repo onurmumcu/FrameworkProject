@@ -17,9 +17,9 @@ public class Base {
 	
 	public WebDriver initializeDriver() throws IOException {
 		
-//		Properties prop = new Properties();
-//		FileInputStream fis = new FileInputStream("C:\\Users\\Onur\\FrameworkProject\\data.properties");
-//		prop.load(fis);
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\data.properties");
+		prop.load(fis);
 //		String browserName= prop.getProperty("browser");
 		
 		
@@ -27,7 +27,7 @@ public class Base {
 		
 		
 		if(browserName.contains("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless")) {
 			options.addArguments("--headless");
