@@ -20,12 +20,14 @@ public class Base {
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\data.properties");
 		prop.load(fis);
-//		String browserName= prop.getProperty("browser");
+		String browserName= prop.getProperty("browser");
+		
+		String os = prop.getProperty("os");
 		
 		
-	String browserName= 	System.getProperty("browser");
+	//String browserName= 	System.getProperty("browser");
 		
-		
+		if(os.contains("win")) {
 		if(browserName.contains("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
@@ -40,6 +42,23 @@ public class Base {
 			   driver = new FirefoxDriver();
 		}else if(browserName==null) {
 			System.out.println("============ NO WEBDRIVER ===============");
+		}
+		}else if(os.contains("mac")) {
+			if(browserName.contains("chrome")) {
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver");
+				ChromeOptions options = new ChromeOptions();
+				if(browserName.contains("headless")) {
+				options.addArguments("--headless");
+				}
+				   driver = new ChromeDriver(options);
+			}else if(browserName.equals("firefox")){
+				
+				//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\geckodriver");
+				   driver = new FirefoxDriver();
+			}else if(browserName==null) {
+				System.out.println("============ NO WEBDRIVER ===============");
+			}
 		}
 		
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
