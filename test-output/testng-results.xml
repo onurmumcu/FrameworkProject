@@ -1,57 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30" started-at="2019-09-22T21:57:23 EDT" finished-at="2019-09-22T21:57:23 EDT">
+  <suite name="Default suite" duration-ms="27946" started-at="2019-09-22T22:14:28 EDT" finished-at="2019-09-22T22:14:56 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30" started-at="2019-09-22T21:57:23 EDT" finished-at="2019-09-22T21:57:23 EDT">
-      <class name="TestCases.HomePageTest">
-        <test-method status="FAIL" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.HomePageTest@1f28c152]" name="basePageNavigation" duration-ms="0" started-at="2019-09-22T21:57:23 EDT" finished-at="2019-09-22T21:57:23 EDT">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [basePageNavigation] with [class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [basePageNavigation] with [class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="27946" started-at="2019-09-22T22:14:28 EDT" finished-at="2019-09-22T22:14:56 EDT">
+      <class name="TestCases.HomePageTest2">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.HomePageTest2@7791a895]" name="basePageNavigation" duration-ms="27907" started-at="2019-09-22T22:14:28 EDT" data-provider="getData" finished-at="2019-09-22T22:14:56 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sdjshdffsijh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdjshsijh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted User]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-      </class> <!-- TestCases.HomePageTest -->
+      </class> <!-- TestCases.HomePageTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
