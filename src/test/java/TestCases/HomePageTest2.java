@@ -4,15 +4,18 @@ import java.io.IOException;
 
 
 import org.openqa.selenium.By;
-
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.Base;
 
-public class HomePageTest extends Base{
 
+public class HomePageTest2 extends Base{
 
+@Test(dataProvider="getData")
 public void basePageNavigation(String userName, String password, String text) throws IOException, InterruptedException {
 		driver=initializeDriver();
 		driver.get("http://qaclickacademy.com");
@@ -23,7 +26,7 @@ public void basePageNavigation(String userName, String password, String text) th
 		driver.findElement(By.xpath("//button[contains(text(),'NO THANKS')]")).click();
 		
 		String actual =  l.getTitle().getText();
-		//Assert.assertEquals(actual, "FEATURED COURSES");
+		Assert.assertEquals(actual, "FEATURED COURSES");
 	
 		l.getLogin().click();
 		
@@ -39,17 +42,17 @@ public void basePageNavigation(String userName, String password, String text) th
 	
 
 	
-
+@DataProvider
 	public Object [][] getData(){
 		
-		Object [][] data = new Object [2][3];
+		Object [][] data = new Object [1][3];
 		data[0][0]  = "sdjshdffsijh";
 		data[0][1]  = "sdjshsijh";
 		data[0][2]  = "Restricted User";
 		
-		data[1][0]  = "sdfishfsijh";
-		data[1][1]  = "sdjsshfsijh";
-		data[1][2]  = "Non restricted User";
+//		data[1][0]  = "sdfishfsijh";
+//		data[1][1]  = "sdjsshfsijh";
+//		data[1][2]  = "Non restricted User";
 		
 		
 		
